@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <title>Article preview component</title>
+</head>
+<body>
+  <main class="card">
+    <section class="img-section">
+    </section>
+    <section class="content-section">
+      <h1 class="content-section__title">
+        Shift the overall look and feel by adding these wonderful 
+        touches to furniture in your home
+      </h1>
+      <p class="content-section__text">
+        Ever been in a room and felt like something was missing? Perhaps 
+        it felt slightly bare and uninviting. I’ve got some simple tips 
+        to help you make any room feel complete.
+      </p>
+      <div class="content-section__footer">
+        <div class="content-section__user">
+          <img src="assets/images/avatar-michelle.jpg" alt="avatar-michelle" class="user__img">
+          <h3 class="user__info">
+            Michelle Appleton
+            <br>
+            <span class="info__date">
+              28 Jun 2020
+            </span>
+          </h3>
+          <button class="user__share-btn">
+            <ion-icon name="arrow-redo" class="share-btn"></ion-icon>
+          </button>
+        </div>
+
+        <div class="share-btn__container hidden">
+          <span class="container__share-text">
+            SHARE
+          </span>
+          <div class="container__links-container">
+            <a href="#" class="links">
+              <i class="fab fa-facebook-square links"></i>
+            </a>
+            <a href="#" class="links">
+              <i class="fab fa-twitter links"></i>
+            </a>
+            <a href="#" class="links">
+              <i class="fab fa-pinterest links"></i>
+            </a>
+          </div>
+          <button class="user__share-btn container__btn active-btn">
+            <ion-icon name="arrow-redo" class="share-btn"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
