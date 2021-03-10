@@ -1,0 +1,160 @@
+@import "./modifiers";
+
+// Colors
+$dark-blue: hsl(240, 38%, 20%);
+$grayish-blue: hsl(240, 18%, 77%);
+$dark-grayish-blue: hsl(240, 8%, 50%);
+// Screen sizes
+$laptop: 1024px;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    color: $dark-blue;
+}
+body {
+    min-height: 100vh;
+    background-image: url(../assets/images/pattern-curve.svg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    @media screen and (min-width: $laptop) {
+        background-size: 45%;
+    }
+}
+
+.main {
+    margin: 7.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: $laptop) {
+        height: 100vh;
+        flex-direction: row-reverse;
+        margin: 0;
+    }
+
+    .main__img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 10rem;
+        min-height: 9.6rem;
+        background-image: url(../assets/images/pattern-bg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        @media screen and (min-width: $laptop) {
+            background-size: 80%;
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-container__img {        
+            background-position-x: center;
+            background-size: cover;
+            width: 7.75rem;
+            max-width: 80%;
+            height: 7.75rem;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0 40px 50px -35px $dark-grayish-blue;
+            @media screen and (min-width: $laptop) {
+                width: 14.75rem;
+                height: 14.75rem;
+                transform: translate(-15px, 5px);
+            }
+        
+            .img__displacer {
+                width: min-content;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 50%);
+                display: flex;
+                background-color: white;
+                border-radius: 25px;
+                overflow: hidden;
+                @media screen and (min-width: $laptop) {
+                    left: 22.5%;
+                }
+            
+                .displacer__arrow {
+                    font-size: .75rem;
+                    color: $dark-grayish-blue;
+                    padding: .25rem .5rem;
+
+                    @media screen and (max-width: $laptop) {
+                        &:active {
+                            background-color: $grayish-blue;
+                        }
+                    } 
+    
+                    @media screen and (min-width: $laptop) {
+                        &:hover {
+                            background-color: $grayish-blue;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+    .main__quote {
+        background-image: url(../assets/images/pattern-quotes.svg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: 2rem;
+        height: fit-content;
+        font-size: .575rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+        @media screen and (min-width: $laptop) {
+            background-position: 3.1rem -.5rem;
+            background-size: 3.5rem;
+            width: 100%;
+            font-size: 1rem;
+            padding-top: 1.5rem;
+            text-align: start;
+            transform: translateX(43.5%);
+        }
+
+        .quote__text {
+            @media screen and (min-width: $laptop) {
+                width: 85%;
+                // transform: translateX(51%);    
+            }
+        }
+
+        .quote__author {
+            padding-top: .5rem;
+            font-size: .5rem;
+            font-weight: 700;
+            @media screen and (min-width: $laptop) {
+                padding-top: 1rem;
+            }
+
+            .author__breakline {
+                @media screen and (min-width: $laptop) {
+                    display: none;
+                }
+            }
+
+            .author__job {
+                color: $grayish-blue;
+                @media screen and (min-width: $laptop) {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
