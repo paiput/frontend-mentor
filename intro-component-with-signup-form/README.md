@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site URL here](https://paiput-intro-component-with-signup-form.netlify.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/sign-up-form-with-html-css-and-a-bit-of-javascript-usBYUmX7L](https://www.frontendmentor.io/solutions/sign-up-form-with-html-css-and-a-bit-of-javascript-usBYUmX7L)
+- Live Site URL: [https://paiput-intro-component-with-signup-form.netlify.app/](https://paiput-intro-component-with-signup-form.netlify.app/)
 
 ## My process
 
