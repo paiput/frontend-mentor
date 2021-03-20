@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main class="main">
+
+    <section class="main__header">
+      <h1 class="header__title">
+        Learn to code by watching others
+      </h1>
+      <p class="header__text">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+
+    <section class="flex-form">
+      <h2 class="flex-form__title">
+        Try it free 7 days <span class="flex-form__title--light">then $20/mo. thereafter</span>
+      </h2>
+      <div class="flex-form__container">
+        <form action="#" class="container__form">
+          <input type="text" name="firstname-inp" id="firstname-input" class="form__input" placeholder="First Name">
+          <p class="input-error-msg error-hidden">
+            <em>First Name cannot be empty</em>
+          </p>
+          <input type="text" name="lastname-inp" id="lastname-input" class="form__input" placeholder="Last Name">
+          <p class="input-error-msg error-hidden">
+            <em>Last Name cannot be empty</em>
+          </p>
+          <input type="email" name="email-inp" id="email-input" class="form__input" placeholder="Email Address">
+          <p class="input-error-msg error-hidden">
+            <em>Looks like this is not an email</em>
+          </p>
+          <input type="password" name="password-inp" id="password-input" class="form__input" placeholder="Password">
+          <p class="input-error-msg error-hidden">
+            <em>Password cannot be empty</em>
+          </p>
+          <input type="submit" id="submit-input" value="CLAIM YOUR FREE TRIAL">
+        </form>
+        <p class="flex-form__terms">
+          By clicking the button, you are agreeing to our <a class="flex-form__terms--link">Terms and Services</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
