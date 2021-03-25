@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/coming-soon-page-with-html-css-and-a-little-bit-of-js-Ja96w1Zoa
 - Live Site URL: https://paiput-ping-cooming-soon-page.netlify.app/
 
 ## My process
