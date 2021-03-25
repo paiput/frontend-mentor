@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Ping coming soon page</title>
+</head>
+
+<body>
+  <main class="main">
+    <img src="assets/images/logo.svg" alt="logo" class="main__logo">
+    <div class="main__form-container">
+      <h1 class="form-container__title">
+        We are launching <span class="form__title--active">soon!</span>
+      </h1>
+      <p class="form-container__info">
+        Subscribe and get notified
+      </p>
+      <form action="" class="form-container__form">
+        <div class="form__email-container">
+          <input type="email" name="email" id="email-inp" class="form__input" placeholder="Your email address...">
+          <p class="email-inp--error-msg error-hidden">
+            <em>
+              
+            </em>
+          </p>
+        </div>
+        <input type="submit" value="Notify Me" id="submit-inp" class="form__input">
+      </form>
+    </div>
+    <img src="assets/images/illustration-dashboard.png" alt="illustration-dashboard" class="form-container__dashboard">
+    <div class="main__links">
+      <ul class="links__ul">
+        <li class="ul__li">
+          <a href="/" class="li__link">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="ul__li">
+          <a href="/" class="li__link">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="ul__li">
+          <a href="/" class="li__link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="links__copyright">
+        &copy; Copyright Ping. All rights reserved.
+      </p>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
