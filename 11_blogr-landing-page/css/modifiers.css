@@ -1,0 +1,15 @@
+.hidden {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    transition: height, opacity, padding-top, visibility, ease .3s;
+}
+
+.open {
+    text-decoration: underline;
+}
+
+.rotate-arrow {
+    transform: rotate(180deg);
+}

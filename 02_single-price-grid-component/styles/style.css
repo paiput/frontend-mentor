@@ -1,0 +1,153 @@
+:root {
+    /* Primary */
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 53%, 48%);
+    --bright-yellow: hsl(71, 73%, 54%);
+
+    /* Neutral */
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --light-grayish-blue: hsl(216, 17%, 83%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    color: var(--light-gray);
+}
+body {
+    background-color: var(--light-gray);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CARD */
+
+.card {
+    width: 645px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(25, 25, 50, .1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+}
+
+
+
+.card-sections {
+    padding: 2.5rem;
+}
+
+.card-header {
+    background-color: #fff;
+    grid-column: 1 / 3;
+}
+
+.card-left {
+    background-color: var(--cyan);
+}
+
+.card-right {
+    background-color: var(--light-cyan);
+}
+
+/* CARD INSIDES */
+/* header */
+    .card__title {
+        color: var(--cyan);
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .card__short-description {
+        color: var(--bright-yellow);
+        font-size: 1.12rem;
+        margin-bottom: 1rem;
+    }
+
+    .card__text {
+        color: var(--grayish-blue);
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+/* end-header */
+
+.card__bottom-titles {
+    font-size: 1.12rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+/* bottom-left */
+    .card__subscription {
+        display: flex;
+        align-items: center;
+        color: var(--light-grayish-blue);
+        margin-bottom: .5rem;
+    }
+
+    .card__subscription-price {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-right: .75rem;
+        color: #fff;
+    }
+
+    .card__subscription-price-info {
+        margin-bottom: 2rem;
+    }
+
+    .card__button {
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 3rem;
+        font-family: 'Karla';
+        font-weight: 700;
+        font-size: 1rem;
+        color: #fff;
+        background-color: var(--bright-yellow);
+        border-radius: 5px;
+        box-shadow: 0 5px 10px 0 rgba(100, 100, 100, .2);
+    }
+    .card__button:hover {
+        cursor: pointer;
+        background-color: #b1ce23;
+    }
+    .card__button:active {
+        background-color: #a0bd12;
+    }
+/* end-bottom-left */
+
+/* bottom-right */
+    .card__why-list__li {
+        list-style: none;
+        font-size: .9rem;
+        line-height: 1.4;
+    }
+/* end-bottom-right */
+
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 14px;
+    }
+    
+    .card {
+        margin-top: 6rem;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .card-sections {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,139 @@
+:root {
+    /* Primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* Neutral */
+    --light-gray: rgba(150, 150, 150, .3);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+body {/*
+    min-height: 100vh;
+    background-image: url(../assets/images/bg-pattern-top.svg), url(../assets/images/bg-pattern-bottom.svg);
+    background-position: -250px -500px, 750px 300px;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 900px, 900px; */
+    background-color: var(--dark-cyan);
+    overflow: hidden;
+} 
+
+.background-images {
+    width: 1000px;
+}
+.background-image-top {
+    position: absolute;
+    top: -70%;
+    left: -17.5%;
+}
+.background-image-bottom {
+    position: absolute;
+    right: -12.5%;
+    bottom: -90%;
+}
+
+.light-text {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+/* CARD */
+.card {
+    width: 350px;
+    height: 374px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-shadow: 0 0 25px rgba(20, 20, 20, .1);
+}
+
+.card__header {
+    background-image: url(../assets/images/bg-pattern-card.svg);
+    height: 140px;
+    background-size: cover;
+    position: relative;
+}
+
+.card__image {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__body {
+    margin-top: 4em;
+    text-align: center;
+}
+
+.card__city { 
+    font-size: .9rem;
+    margin-top: .6rem;
+    margin-bottom: 1.4rem;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid var(--light-gray);
+    padding-top: 1.5rem;
+}
+
+.card__stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__stats-name {
+    font-size: .55rem;
+    letter-spacing: 2px;
+    margin-top: .275rem;
+}
+
+@media screen and (max-width: 376px) {
+    .card {
+        width: 310px;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    .background-images {
+        width: 500px;
+    }
+    .background-image-top {
+        width: 750px;
+        position: absolute;
+        top: -80%;
+        left: -135%;
+    }
+    .background-image-bottom {
+        position: absolute;
+        right: -75%;
+        bottom: -37.5%;
+    }
+}

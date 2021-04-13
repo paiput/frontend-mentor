@@ -1,0 +1,134 @@
+button {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    outline: none;
+    transition: background-color, color ease-in-out .3s;
+}
+
+.white-btn {
+    background-color: var(--white);
+    color: var(--light-red);
+    font-weight: 700;
+    padding: .75em 0;
+    width: 8rem;
+}
+@media only screen and (min-width: 1024px) {
+    .white-btn:hover {
+        background-color: var(--very-light-red);
+        color: var(--white);
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .white-btn:active {
+        background-color: var(--very-light-red);
+        color: var(--white);
+    }
+}
+
+.no-bg-btn {
+    background-color: transparent;
+    color: var(--white);
+    opacity: .8;
+}
+@media only screen and (min-width: 1024px) {
+    .no-bg-btn:hover {
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .no-bg-btn:active {
+        opacity: 1;
+    }
+}
+
+.border-btn {
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    opacity: .8;
+    padding: calc(.75em - 2px) 0;
+    width: 8rem;
+}
+@media only screen and (min-width: 1024px) {
+    .border-btn:hover {
+        background-color: var(--white);
+        color: var(--very-light-red);
+        opacity: 1;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .border-btn:active {
+        background-color: var(--white);
+        color: var(--very-light-red);
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .f-li__f-link:hover {
+        text-decoration: underline;
+    }    
+
+    .h-li__link:hover {
+        font-weight: 600;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .f-li__f-link:active {
+        text-decoration: underline;
+    }    
+
+    .h-li__link:active {
+        font-weight: 600;
+    }
+}
+
+/* mobile size buttons */
+@media only screen and (max-width: 1024px) {
+    .no-bg-btn {
+        color: var(--very-dark-black-blue);
+    }
+    .no-bg-btn:active {
+        opacity: 1;
+    }
+    #signup-btn {
+        background-image: linear-gradient(
+            to right,
+            var(--g-very-light-red) 0%,
+            var(--g-light-red) 100%
+        );
+        color: var(--white);
+        font-weight: 500;
+    }
+
+    .nav__hamburger {
+        cursor: pointer;
+        display: grid;
+        height: 2.25rem;
+        place-items: center;
+        position: relative;
+        width: 2.25rem;
+    }
+    .hamburger__line {
+        width: 100%;
+        background-color: var(--white);
+        height: 3px;
+        transition: all ease .6s;
+    }
+
+    .change .hamburger__line-1 {
+        transform: rotateZ(45deg);
+        position: absolute;
+    }
+    .change .hamburger__line-2 {
+        opacity: 0;
+    }
+    .change .hamburger__line-3 {
+        transform: rotateZ(-45deg);
+        position: absolute;
+    }
+}
