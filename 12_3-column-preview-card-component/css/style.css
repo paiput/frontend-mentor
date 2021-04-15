@@ -95,3 +95,10 @@ body {
         color: var(--very-light-gray);
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    .footer__button:active {
+        background-color: transparent;
+        color: var(--very-light-gray);
+    }
+}
