@@ -4,4 +4,4 @@ Hi! These are all my [Frontend Mentor](https://www.frontendmentor.io/) challange
 
 As you can see they are listed from the first to the last I completed.
 
-You can also see them on my [Frontend Mentor Profile](https://www.frontendmentor.io/prfofile/paiput).
+You can also find them on my [Frontend Mentor Profile](https://www.frontendmentor.io/prfofile/paiput).
