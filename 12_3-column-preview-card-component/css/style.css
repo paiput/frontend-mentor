@@ -30,9 +30,14 @@ body {
     align-items: center;
     border-radius: 5px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     overflow: hidden;
+}
+@media only screen and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        margin: 2.5rem;
+    }
 }
 
 .main__card {
@@ -42,9 +47,20 @@ body {
 .main__card:nth-child(2) {background-color: var(--dark-cyan);}
 .main__card:nth-child(3) {background-color: var(--very-dark-cyan);}
 
+@media only screen and (max-width: 1024px) {
+    .main__card {
+        padding: 2rem;
+    }
+}
+
 .card__text-container {
     margin: 1.5rem 0 5rem;
     max-width: 23ch;
+}
+@media only screen and (max-width: 1024px) {
+    .card__text-container {
+        max-width: 25ch;
+    }
 }
 
 .text-container__title {
