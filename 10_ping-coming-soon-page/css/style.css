@@ -81,6 +81,10 @@ html {
 
 .form__email-container {
     position: relative;
+<<<<<<< HEAD
+=======
+    width: 100%;
+>>>>>>> 3b18c0b (first commit)
 }
 
 .form__input {

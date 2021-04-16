@@ -39,6 +39,7 @@ body {
 }
 .header__text {
     line-height: 1.5;
+    color: var(--dark-grayish-magenta);
 }
 /* end HEADER */
 @media screen and (min-width: 1440px) {
