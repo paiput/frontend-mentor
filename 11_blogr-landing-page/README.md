@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://www.frontendmentor.io/profile/paiput
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: https://paiput-blogr-landing-page.netlify.app/
 
 ## My process
