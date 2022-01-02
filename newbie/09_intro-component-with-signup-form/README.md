@@ -73,5 +73,4 @@ I'll continue focusing on JavaScript as I still have a lot to learn.
 
 Lucas Piputto
 
-- Website - No Website yet
 - Frontend Mentor - [@paiput](https://www.frontendmentor.io/profile/paiput)

@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/3-column-preview-card-with-flex-YT8nCSdu_
 - Live Site URL: https://3-column-preview-card-component-paiput.netlify.app/
 
 ## My process

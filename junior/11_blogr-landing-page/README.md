@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/blogr-landing-page-with-html-css-and-js-ejXc92tTZ
 - Live Site URL: https://paiput-blogr-landing-page.netlify.app/
 
 ## My process
@@ -53,5 +53,4 @@ I have to learn a lot more about JavaScript, so that will be my focus for the ne
 
 Lucas Piputto
 
-- Website - No Website yet
 - Frontend Mentor - [@paiput](https://www.frontendmentor.io/profile/paiput)

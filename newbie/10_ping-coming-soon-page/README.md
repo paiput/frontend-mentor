@@ -32,11 +32,7 @@ Users should be able to:
 
 ### Links
 
-<<<<<<< HEAD
 - Solution URL: https://www.frontendmentor.io/solutions/coming-soon-page-with-html-css-and-a-little-bit-of-js-Ja96w1Zoa
-=======
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
->>>>>>> 3b18c0b (first commit)
 - Live Site URL: https://paiput-ping-cooming-soon-page.netlify.app/
 
 ## My process
@@ -57,8 +53,4 @@ I'll continue focusing on JavaScript as I still have a lot to learn.
 Lucas Piputto
 
 - Website - No Website yet
-<<<<<<< HEAD
 - Frontend Mentor - [@paiput](https://www.frontendmentor.io/profile/paiput)
-=======
-- Frontend Mentor - [@paiput](https://www.frontendmentor.io/profile/paiput)
->>>>>>> 3b18c0b (first commit)
