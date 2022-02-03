@@ -1,0 +1,295 @@
+:root {
+  /* accent colors */
+  --lime-green: hsl(163, 72%, 41%);
+  --bright-red: hsl(356, 69%, 56%);
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube: hsl(348, 97%, 39%);
+
+  /* background colors */
+  --bg-color: hsl(230, 17%, 14%);
+  --bg-pattern: hsl(232, 19%, 15%);
+  --bg-switch-pattern: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --card-bg: hsl(228, 28%, 20%);
+  --card-hover-bg: hsl(228, 26%, 27%);
+  
+  /* text colors */
+  --text-color: hsl(228, 34%, 66%);
+  --accented-text-color: hsl(0, 0%, 100%);
+}
+
+[data-theme="dark"] {
+  /* background colors */
+  --bg-color: hsl(0, 0%, 100%);
+  --bg-pattern: hsl(225, 100%, 98%);
+  --bg-switch-pattern: hsl(230, 22%, 74%);
+  --card-bg: hsl(227, 47%, 96%);
+  --card-hover-bg: hsl(232, 33%, 91%);
+
+  /* text colors */
+  --text-color: hsl(228, 12%, 44%);
+  --accented-text-color: hsl(230, 17%, 14%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  padding: 0;
+}
+
+h1,
+h2 {
+  color: var(--accented-text-color);
+  font-size: max(2.222vw, 1.4rem);
+}
+
+.main__header > *:not(:first-child),
+main > section {
+  padding-inline: 10%;
+}
+
+/* generals */
+.switch {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .separator {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .separator {
+    background-color: var(--text-color);
+    display: block;
+    margin-block: 1.5rem 1.25rem;
+    padding-block: .02em;
+  }
+  
+  .switch {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.switch .slider {
+  background: var(--bg-switch-pattern);
+  border-radius: 25px;
+  display: block;
+  height: 25px;
+  position: relative;
+  width: 50px;
+}
+
+.switch .slider::before {
+  background: var(--bg-pattern);
+  border-radius: inherit;
+  content: '';
+  display: block;
+  height: 20px;
+  margin: 2.5px;
+  transition: transform ease .3s;
+  width: 20px;
+}
+
+input[type="checkbox"]:checked + .switch .slider::before {
+  transform: translateX(25px);
+}
+
+input[type="checkbox"] { 
+  display: none; 
+}
+/* /generals */
+
+/* header */
+.main__header {
+  margin-block: 2.5rem;
+  position: relative;
+}
+
+.main__header-background {
+  background-color: var(--bg-pattern);
+  border-radius: 0 0 15px 15px;
+  height: 100%;
+  position: absolute;
+  transform: translateY(-125px);
+  width: 100%;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .main__header-background {
+    border-radius: 0 0 30px 30px;
+    transform: translateY(-1020px);
+  }
+}
+
+.main__header-container {
+  display: flex;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .main__header-container {
+    flex-direction: column;
+  }
+}
+
+.main__header .title-container {
+  font-weight: 700;
+}
+/* /header */
+
+/* card */
+.cards-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 270px;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  transition: background-color ease .15s;
+}
+
+@media (min-width: 768px) {
+  .card:hover {
+    background-color: var(--card-hover-bg);
+    transition: all ease .3s;
+  }
+}
+
+.card__social-media-container {
+  align-items: center;
+  display: flex;
+  gap: .5em;
+  margin: 2rem 0 1.25rem;
+}
+
+.card .stat-count {
+  color: var(--accented-text-color);
+  font-weight: 700;
+}
+
+.card .stat-label {
+  font-size: 1.1rem;
+}
+
+.card__followers-status-container {
+  align-items: center;
+  display: flex;
+  font-weight: 700;
+  gap: .25em;
+}
+/* /card */
+
+/* main cards */
+.main-card {
+  max-width: 500px;
+  text-align: center;
+}
+
+.main-card .stat-count {
+  font-size: 4rem;
+}
+
+.main-card .stat-label {
+  font-weight: 400;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+}
+
+.main-card .card__social-media-container {
+  justify-content: center;
+}
+
+.main-card .card__accent-color {
+  display: block;
+  height: 5px;
+  width: 100%;
+}
+
+.card__accent-color--facebook { background-color: var(--facebook); }
+.card__accent-color--twitter { background-color: var(--twitter); }
+.card__accent-color--instagram { background: var(--instagram) }
+.card__accent-color--youtube { background-color: var(--youtube); }
+
+.main-card .card__followers-status-container {
+  justify-content: center;
+  margin-block: 1.75rem;
+}
+/* /main card */
+
+/* small cards */
+.small-cards-section {
+  margin-block: 3rem;
+}
+
+.small-cards-container {
+  margin-top: 1.5rem;
+}
+
+.small-card {
+  display: grid;
+  row-gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 275px;
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .small-card {
+    max-width: 100%;
+  }
+}
+
+.small-card > *:nth-child(2n+2) {
+  justify-self: right;
+}
+
+.small-card > *:last-child {
+  align-self: flex-end; 
+}
+
+.small-card .stat-label {
+  font-size: .9rem;
+}
+
+.small-card .stat-count {
+  font-size: 2rem;
+}
+/* /small cards */
+
+/* modifiers */
+.status-up { color: var(--lime-green) }
+.status-down { color: var(--bright-red) }
